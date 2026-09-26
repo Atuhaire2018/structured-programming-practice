@@ -1,0 +1,11 @@
+# Compiled executable binaries
+*.exe
+*.out
+*.o
+*.obj
+
+# Code::Blocks temporary files and build folders
+bin/
+obj/
+*.layout
+*.depend
