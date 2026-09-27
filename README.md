@@ -29,7 +29,13 @@ Concepts used: 'for' loop, integer variables, 'printf'.
 How it works: The loop starts at 'n = 1' and continues while 'n <= 13', adding 2 to 'n' after each iteration instead of 1. Starting at an odd number and stepping by 2 means every value the loop variable takes is odd, so the loop naturally skips all even numbers without needing an 'if' check.
 
 ## Exercise 5 - Loop_calculation
-source: Deitel & Deitel, C How to program, 9th Edition, Chapter 4, Exercise 4.11, page 220
+source: Deitel & Deitel, C How to program, 9th Edition, Chapter 4, Exercise 4.11, page 225.
 what the program does: Calculates and prints the sum of all multiples of 7 from 1 to 100, printing each multiple as it's found.
 Concepts used: `for` loop, accumulator variable, arithmetic operators.
 How it works: The loop starts at `i = 7` and adds 7 each time, stopping once `i` exceeds 100. On every iteration, the current multiple is printed and also added to `sum`, which accumulates the running total. After the loop ends, the final sum is printed.
+
+## Exercise 6 - loop_input
+Source: Deitel & Deitel, C How to Program, 9th Edition, Chapter 3, Exercise 3.19, page 178.
+What the program does: Repeatedly reads a loan's principal, interest rate and term (in days), then calculates and displays the simple interest for each loan, stopping when the user enters -1 as the principal.
+Concepts used: `while` loop, sentinel-controlled iteration, `scanf` inside a loop, arithmetic operators.
+How it works: The formula used is `interest = principal * rate * days / 365`, since `rate` is assumed to be an annual rate. The principal is read once before the loop (a priming read). While it isn't -1, the program reads the rate and days, calculates and prints the interest, then reads the next principal at the bottom of the loop — this re-read is what lets the sentinel value be checked again each time the loop repeats.
