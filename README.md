@@ -27,3 +27,9 @@ source: Deitel & Deitel, C How to program, 9th Edition, Chapter 4, Exercise 4.7(
 what the program does: Displays all the odd integers from 1 to 13.
 Concepts used: 'for' loop, integer variables, 'printf'.
 How it works: The loop starts at 'n = 1' and continues while 'n <= 13', adding 2 to 'n' after each iteration instead of 1. Starting at an odd number and stepping by 2 means every value the loop variable takes is odd, so the loop naturally skips all even numbers without needing an 'if' check.
+
+## Exercise 5 - Loop_calculation
+source: Deitel & Deitel, C How to program, 9th Edition, Chapter 4, Exercise 4.11, page 220
+what the program does: Calculates and prints the sum of all multiples of 7 from 1 to 100, printing each multiple as it's found.
+Concepts used: `for` loop, accumulator variable, arithmetic operators.
+How it works: The loop starts at `i = 7` and adds 7 each time, stopping once `i` exceeds 100. On every iteration, the current multiple is printed and also added to `sum`, which accumulates the running total. After the loop ends, the final sum is printed.
