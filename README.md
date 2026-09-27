@@ -21,3 +21,9 @@ Source: Deitel & Deitel, C How to Program, 9th Edition, Chapter 2, Exercise 2.22
 What the program does: Reads an integer from the user and determines and displays whether it is odd or even, using the remainder operator.
 Concepts used: printf, escape sequences (\n),if, else if, else, %,relational operators
 How it works: The program divides the number by 2 using `%`, which gives the remainder of that division. Since any multiple of 2 leaves a remainder of 0, the program checks `number % 2 == 0` — if true, the number is even; otherwise (any nonzero remainder), it's odd.
+
+## Exercise 4 - Basic-loop
+source: Deitel & Deitel, C How to program, 9th Edition, Chapter 4, Exercise 4.7(a), page 224.
+what the program does: Displays all the odd integers from 1 to 13.
+Concepts used: 'for' loop, integer variables, 'printf'.
+How it works: The loop starts at 'n = 1' and continues while 'n <= 13', adding 2 to 'n' after each iteration instead of 1. Starting at an odd number and stepping by 2 means every value the loop variable takes is odd, so the loop naturally skips all even numbers without needing an 'if' check.
