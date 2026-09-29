@@ -10,7 +10,7 @@ What the program does: Displays a simple greeting and some biodata about me usin
 Concepts used: printf, escape sequences (\n)
 How it works: The program calls printf multiple times to print rows of characters containing that information.
 
-## Exercise 2 - Input-Process-Output
+## Exercise 2 - Input Process Output
 Source: Deitel & Deitel, C How to Program, 9th Edition, Chapter 2, Exercise 2.16, page 134.
 What the program does: Takes two numbers from the user, computes their sum and product, and displays the results.
 Concepts used: printf, escape sequences (\n), variables, scanf, arithmetic operators(+,*,-,/,%)
@@ -22,19 +22,19 @@ What the program does: Reads an integer from the user and determines and display
 Concepts used: printf, escape sequences (\n),if, else if, else, %,relational operators
 How it works: The program divides the number by 2 using `%`, which gives the remainder of that division. Since any multiple of 2 leaves a remainder of 0, the program checks `number % 2 == 0` — if true, the number is even; otherwise (any nonzero remainder), it's odd.
 
-## Exercise 4 - Basic-loop
+## Exercise 4 - Basic loop
 source: Deitel & Deitel, C How to program, 9th Edition, Chapter 4, Exercise 4.7(a), page 224.
 what the program does: Displays all the odd integers from 1 to 13.
 Concepts used: 'for' loop, integer variables, 'printf'.
 How it works: The loop starts at 'n = 1' and continues while 'n <= 13', adding 2 to 'n' after each iteration instead of 1. Starting at an odd number and stepping by 2 means every value the loop variable takes is odd, so the loop naturally skips all even numbers without needing an 'if' check.
 
-## Exercise 5 - Loop_calculation
+## Exercise 5 - Loop calculation
 source: Deitel & Deitel, C How to program, 9th Edition, Chapter 4, Exercise 4.11, page 225.
 what the program does: Calculates and prints the sum of all multiples of 7 from 1 to 100, printing each multiple as it's found.
 Concepts used: `for` loop, accumulator variable, arithmetic operators.
 How it works: The loop starts at `i = 7` and adds 7 each time, stopping once `i` exceeds 100. On every iteration, the current multiple is printed and also added to `sum`, which accumulates the running total. After the loop ends, the final sum is printed.
 
-## Exercise 6 - loop_input
+## Exercise 6 - loop input
 Source: Deitel & Deitel, C How to Program, 9th Edition, Chapter 3, Exercise 3.19, page 178.
 What the program does: Repeatedly reads a loan's principal, interest rate and term (in days), then calculates and displays the simple interest for each loan, stopping when the user enters -1 as the principal.
 Concepts used: `while` loop, sentinel-controlled iteration, `scanf` inside a loop, arithmetic operators.
@@ -46,7 +46,7 @@ what the program does: Analyzes the credit status of three customers after a com
 concept used: `for` loop, `if...else` inside a loop, counter variable, arithmetic operators, `scanf` and `printf`.
 How it works: The `for` loop runs exactly three times, once per customer. Inside each iteration, the program reads the three inputs and calculates the new limit with `current_limit = limit / 2`. An `if...else` then compares `balance` against `current_limit`: if the balance is higher, the program prints a warning and adds 1 to the `limit` counter; otherwise it reports that the account is within its limit. 
 
-## Exercise 1 - Basic Output
+## Exercise 8 - Interactive Console Program
 Source: Deitel & Deitel, C How to Program, 9th Edition, Chapter 4, Exercise 4.19, page 226.
 What the program does: An online retailer sells five products at fixed prices. The user repeatedly enters a product number and the quantity sold; the program looks up the price with a switch statement, adds the line total to a running total, and stops when 0 is entered, then prints the total retail value of all sales.
 Concepts used: switch multiple-selection statement, sentinel-controlled while loop, continue, accumulator variable.
