@@ -45,3 +45,9 @@ Source: Deitel & Deitel, C How to Program, 9th Edition, Chapter 4, Exercise 4.17
 what the program does: Analyzes the credit status of three customers after a company cuts every customer's credit limit in half. For each customer, it reads the account number, the credit limit before the recession and the current balance, then calculates and prints the new credit limit and reports whether the balance exceeds it. It also counts how many customers are over their new limit.
 concept used: `for` loop, `if...else` inside a loop, counter variable, arithmetic operators, `scanf` and `printf`.
 How it works: The `for` loop runs exactly three times, once per customer. Inside each iteration, the program reads the three inputs and calculates the new limit with `current_limit = limit / 2`. An `if...else` then compares `balance` against `current_limit`: if the balance is higher, the program prints a warning and adds 1 to the `limit` counter; otherwise it reports that the account is within its limit. 
+
+## Exercise 1 - Basic Output
+Source: Deitel & Deitel, C How to Program, 9th Edition, Chapter 4, Exercise 4.19, page 226.
+What the program does: An online retailer sells five products at fixed prices. The user repeatedly enters a product number and the quantity sold; the program looks up the price with a switch statement, adds the line total to a running total, and stops when 0 is entered, then prints the total retail value of all sales.
+Concepts used: switch multiple-selection statement, sentinel-controlled while loop, continue, accumulator variable.
+How it works: A priming read gets the first product number. While it isn't 0, a switch picks the price for the given product (or, for an invalid number, prints an error and uses continue to skip straight to the next read). Otherwise the quantity is read, `price * quantity` is added to `total`, and the next product number is read at the bottom of the loop. After the loop ends, the total is printed.
